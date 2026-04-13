@@ -1,0 +1,1693 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Federbusch Tischlermeister – Professionelle Möbelmontage in Osttirol & Tirol</title>
+  <meta name="description" content="Lukas Federbusch – Tischlermeister aus Lienz, Osttirol. Spezialist für Möbelmontagen, Küchenmontagen, Türen, Fenster und Böden. Vertrauenspartner von Tischlereien in Tirol, Kärnten und Südtirol seit 2022.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://federbusch-tischlermeister.at">
+  <meta property="og:title" content="Federbusch Tischlermeister – Möbelmontage Osttirol">
+  <meta property="og:description" content="Professionelle Montagen für Möbel, Küchen, Fenster, Türen und Böden in Osttirol. Lukas Federbusch – Ihr Tischlermeister in Lienz.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_AT">
+  <link rel="alternate" href="/llms.txt" title="AI Context">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪵</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary:      #1E3A2F;
+      --accent:       #C4873B;
+      --primary-dark: #152B22;
+      --accent-dark:  #A86D28;
+      --text:         #2d2d2d;
+      --text-light:   #6b6560;
+      --bg-main:      #ffffff;
+      --bg-warm:      #faf8f5;
+      --white:        #ffffff;
+      --shadow-sm:    0 2px 12px rgba(0,0,0,0.06);
+      --shadow-md:    0 4px 24px rgba(0,0,0,0.10);
+      --shadow-lg:    0 8px 40px rgba(0,0,0,0.16);
+      --radius:       8px;
+      --radius-full:  999px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg-main);
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+
+    h1 { font-size: clamp(36px, 5.5vw, 64px); }
+    h2 { font-size: clamp(28px, 3.5vw, 44px); }
+    h3 { font-size: clamp(20px, 2vw, 26px); }
+
+    p { margin-bottom: 1rem; }
+    p:last-child { margin-bottom: 0; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; height: auto; display: block; }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+
+    section { padding: 96px 0; }
+
+    .section-label {
+      display: inline-block;
+      font-family: 'Lato', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    .section-intro {
+      color: var(--text-light);
+      max-width: 580px;
+      margin-top: 14px;
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    .text-accent { color: var(--accent); }
+
+    /* BUTTONS */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      min-height: 44px;
+      border-radius: var(--radius-full);
+      font-family: 'Lato', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s;
+      border: none;
+      letter-spacing: 0.02em;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+    .btn-primary { background: var(--accent); color: var(--white); }
+    .btn-primary:hover { background: var(--accent-dark); }
+    .btn-secondary { background: transparent; border: 2px solid rgba(255,255,255,0.65); color: var(--white); }
+    .btn-dark { background: var(--primary); color: var(--white); }
+
+    /* ── NAVIGATION ── */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(30, 58, 47, 0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--white);
+      font-family: 'Fraunces', serif;
+      font-size: 19px;
+    }
+
+    .nav-logo svg { flex-shrink: 0; }
+
+    .logo-light { font-weight: 300; }
+    .logo-bold  { font-weight: 700; color: var(--accent); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: rgba(255,255,255,0.78);
+      font-size: 14px;
+      font-family: 'Lato', sans-serif;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--white); }
+
+    .nav-cta {
+      background: var(--accent);
+      color: var(--white);
+      padding: 10px 22px;
+      border-radius: var(--radius-full);
+      font-size: 14px;
+      font-weight: 700;
+      font-family: 'Lato', sans-serif;
+      min-height: 40px;
+      display: inline-flex;
+      align-items: center;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .nav-cta:hover { background: var(--accent-dark); transform: translateY(-1px); }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 8px;
+      background: none;
+      border: none;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .mobile-menu {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--primary-dark);
+      z-index: 99;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 36px;
+      transform: translateX(100%);
+      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      display: none;
+    }
+    .mobile-menu.open { transform: translateX(0); }
+    .mobile-menu a {
+      color: var(--white);
+      font-family: 'Fraunces', serif;
+      font-size: 26px;
+      font-weight: 700;
+      transition: color 0.2s;
+    }
+    .mobile-menu a:hover { color: var(--accent); }
+
+    /* ── HERO ── */
+    .hero {
+      background:
+        linear-gradient(rgba(21,43,34,0.74), rgba(21,43,34,0.74)),
+        url('https://picsum.photos/seed/holzhero/1920/1080') center/cover no-repeat;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      color: var(--white);
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 58% 42%;
+      gap: 56px;
+      align-items: center;
+      width: 100%;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(196,135,59,0.22);
+      border: 1px solid rgba(196,135,59,0.45);
+      color: #e8a95a;
+      font-family: 'Lato', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: var(--radius-full);
+      margin-bottom: 26px;
+    }
+
+    .hero h1 { color: var(--white); margin-bottom: 24px; }
+
+    .hero-em {
+      font-style: italic;
+      font-weight: 300;
+      color: rgba(255,255,255,0.92);
+    }
+
+    .hero-subline {
+      font-size: 18px;
+      line-height: 1.65;
+      opacity: 0.86;
+      margin-bottom: 38px;
+      font-weight: 300;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .hero-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .hero-pill {
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.18);
+      color: rgba(255,255,255,0.88);
+      font-size: 12px;
+      font-family: 'Lato', sans-serif;
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+    }
+
+    /* Hero right: stat cards */
+    .hero-stats {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .hero-stat-card {
+      background: rgba(255,255,255,0.09);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: var(--radius);
+      padding: 22px 28px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .hero-stat-num {
+      font-family: 'Fraunces', serif;
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    .hero-stat-desc {
+      font-size: 13px;
+      opacity: 0.80;
+      font-family: 'Lato', sans-serif;
+      line-height: 1.4;
+    }
+
+    /* ── TRANSFORMATION SLIDER ── */
+    .slider-section { background: var(--bg-main); }
+
+    .slider-section .section-header {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto 48px;
+    }
+
+    .slider-container {
+      position: relative;
+      aspect-ratio: 16/9;
+      overflow: hidden;
+      border-radius: var(--radius);
+      cursor: col-resize;
+      user-select: none;
+      box-shadow: var(--shadow-lg);
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .slider-after,
+    .slider-before { position: absolute; inset: 0; }
+    .slider-after img, .slider-before img {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+    .slider-before img {
+      filter: grayscale(1) contrast(1.1) brightness(1.05);
+    }
+    .slider-before { clip-path: inset(0 50% 0 0); }
+
+    .slider-label {
+      position: absolute;
+      top: 16px;
+      background: rgba(0,0,0,0.52);
+      color: var(--white);
+      font-size: 11px;
+      font-weight: 700;
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+    }
+    .slider-label-left  { left: 16px; }
+    .slider-label-right { right: 16px; }
+
+    .slider-handle {
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      background: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+    }
+
+    .slider-handle-btn {
+      width: 48px; height: 48px;
+      background: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-md);
+      flex-shrink: 0;
+      color: var(--accent);
+      font-size: 17px;
+      font-weight: 900;
+      pointer-events: none;
+      letter-spacing: -2px;
+    }
+
+    /* ── ABOUT / PHILOSOPHIE ── */
+    .about-section { background: var(--bg-warm); }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 42% 58%;
+      gap: 72px;
+      align-items: center;
+    }
+
+    .about-image-wrapper { position: relative; }
+    .about-image-wrapper img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .about-badge {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      background: var(--primary);
+      color: var(--white);
+      border-radius: var(--radius);
+      padding: 20px 26px;
+      box-shadow: var(--shadow-md);
+      text-align: center;
+    }
+    .about-badge-year {
+      font-family: 'Fraunces', serif;
+      font-size: 38px;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .about-badge-label {
+      font-size: 11px;
+      opacity: 0.75;
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 0.06em;
+      margin-top: 4px;
+    }
+
+    .about-content blockquote {
+      border-left: 3px solid var(--accent);
+      padding: 18px 24px;
+      margin: 28px 0;
+      background: rgba(196,135,59,0.06);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+      font-size: 20px;
+      line-height: 1.5;
+      color: var(--primary);
+    }
+    .about-content blockquote cite {
+      display: block;
+      font-family: 'Lato', sans-serif;
+      font-style: normal;
+      font-size: 13px;
+      color: var(--text-light);
+      margin-top: 12px;
+      font-weight: 700;
+    }
+
+    .about-facts {
+      display: flex;
+      gap: 28px;
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
+    .about-fact-num {
+      font-family: 'Fraunces', serif;
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .about-fact-label {
+      font-size: 12px;
+      color: var(--text-light);
+      font-family: 'Lato', sans-serif;
+      margin-top: 4px;
+    }
+
+    /* ── SERVICES ── */
+    .services-section { background: var(--bg-main); }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .service-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-md);
+      padding: 32px 28px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-top: 3px solid transparent;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-top-color: var(--accent);
+    }
+
+    .service-icon { font-size: 38px; margin-bottom: 20px; }
+    .service-card h3 { color: var(--primary); margin-bottom: 12px; }
+    .service-card p { font-size: 15px; color: var(--text-light); }
+
+    .service-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: rgba(196,135,59,0.10);
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      margin-top: 14px;
+      font-family: 'Lato', sans-serif;
+    }
+
+    /* B2B Highlight – volle Breite */
+    .service-b2b {
+      grid-column: span 3;
+      background: var(--primary);
+      color: var(--white);
+      border-top: 3px solid var(--accent);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .service-b2b:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .service-b2b h3 { color: var(--white); }
+    .service-b2b p { color: rgba(255,255,255,0.80); font-size: 15px; }
+    .service-b2b .service-tag {
+      color: #e8a95a;
+      background: rgba(196,135,59,0.18);
+    }
+
+    /* ── TRUST ── */
+    .trust-section {
+      background: var(--primary);
+      color: var(--white);
+    }
+    .trust-section .section-label { color: #e8a95a; }
+    .trust-section h2 { color: var(--white); }
+    .trust-section .section-intro { color: rgba(255,255,255,0.70); }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 52px;
+    }
+
+    .trust-card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: var(--radius);
+      padding: 32px 24px;
+      transition: background 0.3s;
+    }
+    .trust-card:hover { background: rgba(255,255,255,0.11); }
+
+    .trust-icon { font-size: 40px; margin-bottom: 20px; }
+    .trust-card h3 { color: var(--white); font-size: 20px; margin-bottom: 10px; }
+    .trust-card p { color: rgba(255,255,255,0.70); font-size: 14px; line-height: 1.65; margin: 0; }
+
+    /* ── PORTFOLIO MASONRY ── */
+    .portfolio-section { background: var(--bg-warm); }
+
+    .masonry-grid { column-count: 3; column-gap: 12px; }
+    .masonry-item { break-inside: avoid; margin-bottom: 12px; }
+    .masonry-item img { width: 100%; display: block; border-radius: 4px; }
+    .masonry-caption {
+      font-size: 12px;
+      color: var(--text-light);
+      padding: 7px 4px 0;
+      font-family: 'Lato', sans-serif;
+      line-height: 1.4;
+    }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials-section { background: var(--bg-main); }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .testimonial-card {
+      background: var(--bg-warm);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+    }
+
+    .testimonial-quote {
+      font-family: 'Fraunces', serif;
+      font-size: 72px;
+      color: var(--accent);
+      opacity: 0.22;
+      line-height: 0.8;
+      margin-bottom: 16px;
+    }
+
+    .testimonial-stars {
+      color: var(--accent);
+      font-size: 15px;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+
+    .testimonial-text {
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+      font-size: 17px;
+      line-height: 1.6;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .testimonial-author {
+      font-size: 12px;
+      color: var(--text-light);
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    /* ── FAQ ── */
+    .faq-section { background: var(--bg-warm); }
+
+    .faq-list {
+      max-width: 800px;
+      margin: 48px auto 0;
+    }
+
+    .faq-item { border-bottom: 1px solid rgba(0,0,0,0.08); }
+
+    .faq-question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 22px 0;
+      cursor: pointer;
+      min-height: 44px;
+      gap: 16px;
+    }
+    .faq-question h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--primary);
+      flex: 1;
+    }
+
+    .faq-chevron {
+      width: 28px; height: 28px;
+      border: 2px solid var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: transform 0.35s ease, background 0.2s;
+      color: var(--accent);
+      font-size: 11px;
+    }
+    .faq-item.open .faq-chevron {
+      transform: rotate(180deg);
+      background: var(--accent);
+      color: white;
+    }
+
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+    .faq-answer-inner {
+      padding: 0 0 22px;
+      color: var(--text);
+      line-height: 1.75;
+      font-size: 15px;
+    }
+
+    /* ── CONTACT ── */
+    .contact-section { background: var(--bg-main); }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 38% 62%;
+      gap: 72px;
+      align-items: start;
+    }
+
+    .contact-info h3 { margin-bottom: 28px; color: var(--primary); }
+
+    .contact-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+
+    .contact-icon {
+      width: 42px; height: 42px;
+      background: rgba(196,135,59,0.10);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .contact-text strong {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 3px;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .contact-text a {
+      color: var(--primary);
+      font-weight: 700;
+      transition: color 0.2s;
+      font-size: 17px;
+    }
+    .contact-text a:hover { color: var(--accent); }
+
+    .contact-hint {
+      margin-top: 32px;
+      padding: 18px 20px;
+      background: rgba(196,135,59,0.08);
+      border-radius: var(--radius);
+      border-left: 3px solid var(--accent);
+    }
+    .contact-hint p {
+      font-size: 14px;
+      margin: 0;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 14px 18px;
+      min-height: 48px;
+      border: 2px solid #e0dbd4;
+      border-radius: var(--radius);
+      font-family: 'Lato', sans-serif;
+      font-size: 15px;
+      color: var(--text);
+      background: var(--white);
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+      margin-bottom: 16px;
+      display: block;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(196,135,59,0.14);
+    }
+    .contact-form textarea { min-height: 140px; resize: vertical; }
+    .contact-form .btn { width: 100%; justify-content: center; }
+
+    .form-success {
+      display: none;
+      background: rgba(30,58,47,0.07);
+      border: 1px solid var(--primary);
+      border-radius: var(--radius);
+      padding: 24px;
+      text-align: center;
+      color: var(--primary);
+    }
+    .form-success p { margin: 0; font-weight: 400; }
+    .form-success strong { display: block; font-size: 18px; margin-bottom: 8px; }
+
+    /* ── FOOTER ── */
+    .footer {
+      background: var(--primary);
+      color: rgba(255,255,255,0.75);
+      padding: 64px 0 32px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 52px;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: 'Fraunces', serif;
+      font-size: 18px;
+      color: var(--white);
+      margin-bottom: 18px;
+    }
+
+    .footer-desc {
+      font-size: 14px;
+      line-height: 1.65;
+      color: rgba(255,255,255,0.60);
+    }
+
+    .footer h4 {
+      font-family: 'Fraunces', serif;
+      font-size: 16px;
+      color: var(--white);
+      margin-bottom: 18px;
+    }
+
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { font-size: 14px; color: rgba(255,255,255,0.60); transition: color 0.2s; }
+    .footer-links a:hover { color: var(--accent); }
+    .footer-links li:not(:has(a)) { font-size: 14px; color: rgba(255,255,255,0.42); }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      color: rgba(255,255,255,0.38);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-bottom a { color: rgba(255,255,255,0.38); transition: color 0.2s; margin-left: 16px; }
+    .footer-bottom a:hover { color: rgba(255,255,255,0.70); }
+
+    /* ── LUCIDE ICONS ── */
+    .service-icon svg { width: 40px; height: 40px; color: var(--accent); stroke-width: 1.5; }
+    .trust-icon   svg { width: 40px; height: 40px; color: var(--accent); stroke-width: 1.5; }
+    .contact-icon svg { width: 20px; height: 20px; color: var(--accent); stroke-width: 2; }
+    .eyebrow-icon svg { width: 15px; height: 15px; color: #e8a95a; stroke-width: 2; display: inline-block; vertical-align: middle; margin-right: 2px; }
+    .fact-icon    svg { width: 26px; height: 26px; color: var(--accent); stroke-width: 1.8; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .services-grid     { grid-template-columns: repeat(2, 1fr); }
+      .service-b2b       { grid-column: span 2; grid-template-columns: 1fr; gap: 24px; }
+      .trust-grid        { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid       { grid-template-columns: 1fr 1fr; }
+      .masonry-grid      { column-count: 2; }
+    }
+
+    @media (max-width: 768px) {
+      .container  { padding: 0 24px; }
+      section     { padding: 64px 0; }
+
+      .nav-inner   { padding: 0 24px; height: 60px; }
+      .nav-links   { display: none; }
+      .hamburger   { display: flex; }
+      .mobile-menu { display: flex; }
+
+      .hero         { min-height: 80vh; }
+      .hero-inner   { grid-template-columns: 1fr; }
+      .hero-stats   { display: none; }
+      .hero h1      { font-size: 36px; }
+      .hero-subline { font-size: 16px; }
+
+      .about-grid { grid-template-columns: 1fr; gap: 48px; }
+      .about-image-wrapper { order: -1; }
+      .about-image-wrapper img { height: 260px; }
+      .about-badge { bottom: -16px; right: 16px; }
+      .about-content blockquote { font-size: 17px; padding: 14px 18px; }
+
+      .services-grid { grid-template-columns: 1fr; }
+      .service-b2b   { grid-column: span 1; grid-template-columns: 1fr; gap: 20px; }
+
+      .trust-grid          { grid-template-columns: 1fr; }
+      .testimonials-grid   { grid-template-columns: 1fr; }
+      .masonry-grid        { column-count: 1; }
+      .contact-grid        { grid-template-columns: 1fr; gap: 40px; }
+
+      .footer-grid   { grid-template-columns: 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+
+      h2 { font-size: 28px; }
+    }
+  </style>
+
+  <!-- Schema.org: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Federbusch Tischlermeister",
+    "description": "Lukas Federbusch – Tischlermeister und Montagespezialist aus Lienz, Osttirol. Professionelle Möbelmontagen, Küchenmontagen, Fenster-, Tür- und Bodenmontagen für Privatpersonen und Tischlereien in Tirol, Kärnten, Pinzgau und Südtirol.",
+    "url": "https://federbusch-tischlermeister.at",
+    "telephone": "+436644107272",
+    "email": "lukas.federbusch@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Hochschoberstraße 16/12",
+      "addressLocality": "Lienz",
+      "postalCode": "9900",
+      "addressRegion": "Tirol",
+      "addressCountry": "AT"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 46.8290, "longitude": 12.7680 },
+    "areaServed": ["Osttirol","Tirol","Pinzgau","Kärnten","Südtirol","Kitzbühel","Kufstein"],
+    "knowsAbout": ["Möbelmontage","Küchenmontage","Fenstermontage","Türmontage","Bodenverlegung","Bautischlerarbeiten","Innenausbau","Einbauschränke"],
+    "foundingDate": "2022",
+    "priceRange": "€€",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "07:00",
+      "closes": "18:00"
+    }
+  }
+  </script>
+
+  <!-- Schema.org: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wie lange dauert eine typische Möbelmontage in Osttirol?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Das hängt vom Umfang ab. Eine Küchenmontage dauert typischerweise ein bis zwei Tage, einfachere Möbelstücke wie Schränke oder Regale sind oft in wenigen Stunden erledigt. Für Bautischlerarbeiten wie Fenster- oder Türmontagen kalkuliere ich vorab genau, damit Sie wissen, was Sie erwartet. Auf Wunsch gibt es einen verbindlichen Zeitplan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Welche Materialien und Werkzeuge werden bei der Montage eingesetzt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ich arbeite ausschließlich mit hochwertigem Profi-Werkzeug und -Maschinen. Das ist keine Selbstverständlichkeit – viele Montagen scheitern an ungeeignetem Werkzeug. Mein Anspruch: Das Möbel soll nach der Montage so gut sitzen, als wäre es genau für diesen Platz gemacht worden. Hochwertige Ausstattung ist dafür keine Option, sondern Voraussetzung."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Führen Sie Montagen auch für andere Tischlereien durch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja – ein Großteil meiner Aufträge kommt von Tischlereien in Osttirol und den angrenzenden Regionen. Viele Betriebe beauftragen mich mit der Montage ihrer Projekte direkt beim Endkunden. Wenn eine Tischlerei mir den direkten Kundenkontakt anvertraut, ist das das stärkste Qualitätszeichen, das es gibt. Tischlereien mit regelmäßigem Montagebedarf können mich gerne direkt kontaktieren."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie läuft ein Montageauftrag bei Federbusch Tischlermeister ab?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zuerst ein kurzes Gespräch – telefonisch oder vor Ort. Ich schaue mir die Situation an, bespreche den geplanten Ablauf und nenne einen fairen, transparenten Preis. Dann vereinbaren wir einen Termin. Am Montagetag bringe ich alles mit, was gebraucht wird – und ich verlasse die Baustelle erst, wenn alles sitzt und Sie zufrieden sind."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In welchen Regionen ist Lukas Federbusch als Tischlermeister tätig?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mein Heimatgebiet ist Osttirol – von Lienz bis in die Seitentäler des Bezirks. Darüber hinaus nehme ich regelmäßig Aufträge in Kitzbühel und Kufstein, im Pinzgau, in Kärnten sowie in Südtirol an. Bei größeren Projekten bin ich auch weiter weg tätig – sprechen Sie mich an."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Gibt es Garantie auf die Montagearbeiten?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Auf alle meine Montagearbeiten gewähre ich Garantie. Wenn nach der Montage etwas nicht passt oder nachgebessert werden muss, komme ich zurück – ohne wenn und aber. Das ist für mich selbstverständlich, im Tischlergewerbe leider keine Selbstverständlichkeit. Transparenz und Verlässlichkeit sind keine Slogans bei mir – sie sind die Grundlage jedes Auftrags."
+        }
+      }
+    ]
+  }
+  </script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+
+<body>
+
+  <!-- ══ NAVIGATION ══ -->
+  <nav class="nav" role="navigation" aria-label="Hauptnavigation">
+    <div class="nav-inner">
+
+      <a href="#start" class="nav-logo" aria-label="Federbusch Tischlermeister Startseite">
+        <!-- Stehende Feder – Platzhalter bis Logo eingesetzt wird -->
+        <svg width="28" height="36" viewBox="0 0 28 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M14 2C14 2 4 9 4 20C4 25.5 8.5 30 14 30C19.5 30 24 25.5 24 20C24 9 14 2 14 2Z" stroke="#C4873B" stroke-width="1.5" fill="none"/>
+          <line x1="14" y1="30" x2="14" y2="35" stroke="#C4873B" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M14 7V26" stroke="rgba(196,135,59,0.35)" stroke-width="1" stroke-dasharray="2 3.5"/>
+          <path d="M7 16C9.5 15 11.5 14 14 16C16.5 18 19 17 21 16" stroke="#C4873B" stroke-width="1" stroke-linecap="round" fill="none"/>
+          <path d="M7 21C9.5 20 11.5 19 14 21C16.5 23 19 22 21 21" stroke="#C4873B" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.55"/>
+        </svg>
+        <span><span class="logo-light">Federbusch</span> <span class="logo-bold">Tischlermeister</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#leistungen">Leistungen</a></li>
+        <li><a href="#philosophie">Über Lukas</a></li>
+        <li><a href="#projekte">Projekte</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <a href="#kontakt" class="nav-cta">Beratung anfragen</a>
+
+      <button class="hamburger" aria-label="Menü öffnen" onclick="toggleMobileMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile Navigation">
+    <a href="#leistungen"  onclick="closeMobileMenu()">Leistungen</a>
+    <a href="#philosophie" onclick="closeMobileMenu()">Über Lukas</a>
+    <a href="#projekte"    onclick="closeMobileMenu()">Projekte</a>
+    <a href="#faq"         onclick="closeMobileMenu()">FAQ</a>
+    <a href="tel:+436644107272" class="btn btn-primary" onclick="closeMobileMenu()">+43 664 410 7272</a>
+  </div>
+
+
+  <!-- ══ HERO ══ -->
+  <section class="hero" id="start" aria-labelledby="hero-h1">
+    <div class="container">
+      <div class="hero-inner">
+
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <i data-lucide="tree-pine" class="eyebrow-icon"></i>
+            <span>Tischlermeister · Lienz, Osttirol</span>
+          </div>
+
+          <h1 id="hero-h1">
+            Erst durch die Montage<br>
+            <em class="hero-em">entfaltet ein Möbel</em><br>
+            <span class="text-accent">seinen wahren Wert.</span>
+          </h1>
+
+          <p class="hero-subline">
+            Lukas Federbusch – Ihr Spezialist für hochqualitative Möbel- und Bautischlermontagen in Osttirol. Präzise. Verlässlich. Mit echter Liebe zum Handwerk.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#kontakt" class="btn btn-primary">Kostenloses Beratungsgespräch</a>
+            <a href="#projekte" class="btn btn-secondary">Projekte ansehen</a>
+          </div>
+
+          <div class="hero-pills" role="list" aria-label="Vertrauenssignale">
+            <span class="hero-pill" role="listitem">✓ Garantie auf alle Arbeiten</span>
+            <span class="hero-pill" role="listitem">✓ Transparente Preisgestaltung</span>
+            <span class="hero-pill" role="listitem">✓ Vertrauenspartner von Tischlereien</span>
+            <span class="hero-pill" role="listitem">✓ Rasche Reaktionszeiten</span>
+          </div>
+        </div>
+
+        <div class="hero-stats" aria-hidden="true">
+          <div class="hero-stat-card">
+            <div class="hero-stat-num">2022</div>
+            <div class="hero-stat-desc">Meisterbetrieb gegründet<br>in Lienz, Osttirol</div>
+          </div>
+          <div class="hero-stat-card">
+            <div class="hero-stat-num">B2B</div>
+            <div class="hero-stat-desc">Vertrauenspartner regionaler<br>Tischlereien in Tirol</div>
+          </div>
+          <div class="hero-stat-card">
+            <div class="hero-stat-num">5</div>
+            <div class="hero-stat-desc">Regionen: Osttirol · Pinzgau<br>Kärnten · Südtirol · Kitzbühel</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ TRANSFORMATION SLIDER ══ -->
+  <section class="slider-section" aria-labelledby="slider-h2">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Vom Entwurf zur Wirklichkeit</span>
+        <h2 id="slider-h2">Von der ersten Skizze<br>bis zum fertigen Raum</h2>
+        <p class="section-intro">Ein Entwurf wird Wirklichkeit – und erst durch die Montage wird daraus ein Ort, der bleibt.</p>
+      </div>
+
+      <div class="slider-container" id="sliderContainer"
+           role="img" aria-label="Vorher-Nachher-Vergleich: Entwurfsskizze links, fertig montierter Raum rechts">
+        <div class="slider-after">
+          <img
+            src="https://picsum.photos/seed/holzrender/1200/800"
+            alt="Fertig montierter Wohnraum – professionelle Möbelmontage durch Federbusch Tischlermeister in Osttirol"
+            loading="lazy">
+        </div>
+        <div class="slider-before" id="sliderBefore">
+          <img
+            src="https://picsum.photos/seed/holzsketch/1200/800"
+            alt="Entwurfsskizze vor der Montage – Planung von Federbusch Tischlermeister, Lienz, Tirol"
+            loading="lazy">
+        </div>
+        <div class="slider-label slider-label-left">Ihre Idee</div>
+        <div class="slider-label slider-label-right">Unsere Umsetzung</div>
+        <div class="slider-handle" id="sliderHandle">
+          <div class="slider-handle-btn" aria-hidden="true">←→</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ ABOUT / PHILOSOPHIE ══ -->
+  <section class="about-section" id="philosophie" aria-labelledby="about-h2">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-image-wrapper">
+          <img
+            src="https://picsum.photos/seed/lukasfederbusch/600/750"
+            alt="Lukas Federbusch, Tischlermeister aus Lienz, bei präziser Möbelmontage in Osttirol"
+            loading="lazy">
+          <div class="about-badge">
+            <div class="about-badge-year">2022</div>
+            <div class="about-badge-label">Betriebsgründung<br>Osttirol</div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-label">Über Lukas Federbusch</span>
+          <h2 id="about-h2">Handwerk, das<br>man <span class="text-accent">spürt</span></h2>
+
+          <p>Lukas Federbusch ist kein Monteur, der Möbel aufstellt. Er ist Tischlermeister – mit einem Gespür für Material, für Raum und für die Menschen, die darin leben. In Lienz, im Herzen Osttirols, aufgewachsen und 2022 als eigenständiger Betrieb gestartet, hat er sich auf das spezialisiert, was andere übersehen: die Kunst der professionellen Montage.</p>
+
+          <p>Seine Überzeugung ist einfach und klar: Eine Küche aus dem besten Holz, gefertigt von den besten Tischlern der Region, ist nur dann wirklich gut – wenn sie auch gut montiert wird. Falsch eingehängte Türen, unebene Sockel, millimeterfeine Fehler in der Anpassung – sie hinterlassen Spuren, die jahrelang stören. Lukas macht das nicht.</p>
+
+          <blockquote>
+            „Erst durch eine sorgfältige Montage entfaltet ein Möbelstück seinen wahren Wert – und begleitet Menschen über Jahrzehnte."
+            <cite>– Lukas Federbusch, Tischlermeister, Lienz</cite>
+          </blockquote>
+
+          <p>Gelernt hat Lukas nicht nur Tischler, sondern auch Bootsbauer – ein Beruf, der Präzision und Geduld fordert wie kaum ein anderer. Wer Boote baut, weiß: Fehler zeigen sich erst, wenn das Material unter Belastung steht. Diese Denkweise hat er mitgenommen nach Osttirol, in jede Küche, jede Tür, jeden Boden.</p>
+
+          <p>Heute vertrauen ihm nicht nur Privatpersonen in Lienz und ganz Osttirol, sondern vor allem andere Tischlereien, die ihre Projekte beim Kunden in die besten Hände geben wollen. Von Handwerker zu Handwerker – das stärkste Zeichen des Vertrauens.</p>
+
+          <div class="about-facts">
+            <div>
+              <div class="about-fact-num">100%</div>
+              <div class="about-fact-label">Maßarbeit</div>
+            </div>
+            <div>
+              <div class="about-fact-num">5</div>
+              <div class="about-fact-label">Regionen</div>
+            </div>
+            <div>
+              <div class="about-fact-num">B2B</div>
+              <div class="about-fact-label">& Privat</div>
+            </div>
+            <div>
+              <div class="about-fact-num"><i data-lucide="settings-2" class="fact-icon"></i></div>
+              <div class="about-fact-label">Profi-Ausstattung</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ LEISTUNGEN ══ -->
+  <section class="services-section" id="leistungen" aria-labelledby="services-h2">
+    <div class="container">
+      <span class="section-label">Leistungen</span>
+      <h2 id="services-h2">Präzision in<br>jedem <span class="text-accent">Bereich</span></h2>
+      <p class="section-intro">Von der Traumküche bis zur Eingangstür – Lukas Federbusch montiert alles, was das Tischlerhandwerk hergibt. In Osttirol und weit darüber hinaus.</p>
+
+      <div class="services-grid">
+
+        <article class="service-card" aria-labelledby="s1-h">
+          <div class="service-icon" aria-hidden="true"><i data-lucide="utensils"></i></div>
+          <h3 id="s1-h">Küchenmontage</h3>
+          <p>Küchen sind die komplexesten Möbelstücke überhaupt. Perfekt ausgerichtete Fronten, präzise Scharniere, lautlos laufende Schubladen – das ist Handwerk auf höchstem Niveau. In Lienz und Osttirol bringt Lukas Ihre Traumküche so zum Stehen, dass sie ein Leben lang funktioniert.</p>
+          <span class="service-tag">Privatpersonen & B2B</span>
+        </article>
+
+        <article class="service-card" aria-labelledby="s2-h">
+          <div class="service-icon" aria-hidden="true"><i data-lucide="armchair"></i></div>
+          <h3 id="s2-h">Möbelmontage</h3>
+          <p>Schränke, Regale, Wohnwände, Schlafzimmer – jedes Möbelstück verdient eine Montage, die sitzt. Besonders bei hochwertigen Möbeln zahlt sich professionelle Montage in Tirol aus: Sie verlängert die Lebensdauer und hält das, was die Qualität verspricht.</p>
+          <span class="service-tag">Wohn- & Schlafbereich</span>
+        </article>
+
+        <article class="service-card" aria-labelledby="s3-h">
+          <div class="service-icon" aria-hidden="true"><i data-lucide="door-open"></i></div>
+          <h3 id="s3-h">Türen & Fenster</h3>
+          <p>Türen und Fenster sind täglich im Einsatz – hunderte Male im Jahr. Eine schlecht montierte Tür nervt nicht nur, sie kostet Energie und Geld. Lukas montiert Innen- und Außentüren sowie Fenster in Osttirol mit der Sorgfalt, die langfristige Funktion garantiert.</p>
+          <span class="service-tag">Bautischlerarbeiten</span>
+        </article>
+
+        <article class="service-card" aria-labelledby="s4-h">
+          <div class="service-icon" aria-hidden="true"><i data-lucide="layers-2"></i></div>
+          <h3 id="s4-h">Bodenverlegung</h3>
+          <p>Parkett, Laminat, Massivholzdielen – der Boden trägt alles. Lukas verlegt Holzböden in Osttirol und Tirol mit dem Feingefühl, das das natürliche Material verlangt: sorgfältige Akklimatisierung, saubere Fugen, dauerhafte Unterkonstruktion.</p>
+          <span class="service-tag">Holz & Parkett</span>
+        </article>
+
+        <article class="service-card" aria-labelledby="s5-h">
+          <div class="service-icon" aria-hidden="true"><i data-lucide="hard-hat"></i></div>
+          <h3 id="s5-h">Bautischlerarbeiten</h3>
+          <p>Innenausbau, Verkleidungen, Einbauschränke, Dachbodenausbau – alles, was Holz und Handwerk verbindet. Als Tischlermeister übernimmt Lukas Federbusch auch komplexe Bautischlerarbeiten in Tirol, Kärnten, Pinzgau und Südtirol.</p>
+          <span class="service-tag">Innenausbau</span>
+        </article>
+
+        <!-- B2B HIGHLIGHT -->
+        <article class="service-card service-b2b" aria-labelledby="s6-h" id="b2b">
+          <div>
+            <div class="service-icon" aria-hidden="true"><i data-lucide="handshake"></i></div>
+            <h3 id="s6-h">B2B Montageservice –<br>für Tischlereien in Osttirol</h3>
+            <span class="service-tag">Gewerbekunden</span>
+          </div>
+          <div>
+            <p>Viele Tischlereien in Osttirol und den angrenzenden Regionen beauftragen Lukas mit der Montage ihrer Projekte direkt beim Endkunden. Dieses Vertrauen von Handwerker zu Handwerker ist das ehrlichste Qualitätsmerkmal: Wer selbst Tischler ist, weiß, wem er seine Kunden anvertraut.</p>
+            <p style="margin-top: 12px;">Verlässliche Terminplanung, professioneller Kundenkontakt und saubere Ausführung – damit Ihr Projekt auch in der letzten Phase glänzt. Für regelmäßige Montageaufträge sprechen wir gerne eine Zusammenarbeit ab.</p>
+            <a href="#kontakt" class="btn btn-primary" style="margin-top: 20px; width: fit-content;">Montageauftrag anfragen</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ TRUST / WHITE SPACES ══ -->
+  <section class="trust-section" id="vertrauen" aria-labelledby="trust-h2">
+    <div class="container">
+      <span class="section-label">Warum Federbusch</span>
+      <h2 id="trust-h2">Was andere nicht<br>kommunizieren – <span style="color: var(--accent)">Lukas schon</span></h2>
+      <p class="section-intro">Im Tischlergewerbe in Tirol gibt es vier Themen, über die kaum jemand offen spricht. Das ist die Lücke, die Lukas Federbusch schließt.</p>
+
+      <div class="trust-grid" role="list">
+
+        <article class="trust-card" role="listitem" aria-labelledby="t1-h">
+          <div class="trust-icon" aria-hidden="true"><i data-lucide="shield-check"></i></div>
+          <h3 id="t1-h">Garantie auf alle Montagearbeiten</h3>
+          <p>Jede Montage von Lukas Federbusch ist garantiert. Wenn etwas nicht stimmt, kommt er zurück – ohne Diskussion. Kein Tischler in Osttirol kommuniziert das so klar. Garantierte Qualität, nicht nur versprochene.</p>
+        </article>
+
+        <article class="trust-card" role="listitem" aria-labelledby="t2-h">
+          <div class="trust-icon" aria-hidden="true"><i data-lucide="message-circle"></i></div>
+          <h3 id="t2-h">Transparente Preisgestaltung</h3>
+          <p>Vor dem Auftrag gibt es einen klaren, nachvollziehbaren Kostenrahmen. Keine bösen Überraschungen auf der Rechnung. Offene Kommunikation über Preis und Leistung – von Anfang an und ohne Kleingedrucktes.</p>
+        </article>
+
+        <article class="trust-card" role="listitem" aria-labelledby="t3-h">
+          <div class="trust-icon" aria-hidden="true"><i data-lucide="zap"></i></div>
+          <h3 id="t3-h">Verlässliche Reaktionszeiten</h3>
+          <p>Lukas antwortet. Telefonisch erreichbar, kurze Rückrufzeiten, klare Terminplanung. In einem Gewerbe, in dem Kunden oft wochenlang auf Antworten warten, ist das kein Luxus – es ist der Grundrespekt gegenüber jedem Auftraggeber.</p>
+        </article>
+
+        <article class="trust-card" role="listitem" aria-labelledby="t4-h">
+          <div class="trust-icon" aria-hidden="true"><i data-lucide="star"></i></div>
+          <h3 id="t4-h">Empfohlen von Kollegen</h3>
+          <p>Andere Tischlereien in Osttirol und Tirol vertrauen Lukas ihre Projekte und Kunden an. Wenn ein Handwerksmeister einen Kollegen empfiehlt, ist das das ehrlichste Qualitätsmerkmal überhaupt – stärker als jede Werbung.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ PORTFOLIO MASONRY ══ -->
+  <section class="portfolio-section" id="projekte" aria-labelledby="portfolio-h2">
+    <div class="container">
+      <span class="section-label">Referenzprojekte</span>
+      <h2 id="portfolio-h2">Handwerk, das<br><span class="text-accent">man sieht</span></h2>
+      <p class="section-intro">Küchen, Schränke, Türen, Böden – jedes Projekt ein Unikat. In Lienz, Osttirol, dem Pinzgau, Kärnten und Südtirol.</p>
+
+      <div class="masonry-grid" style="margin-top: 48px;" role="list" aria-label="Projektgalerie">
+
+        <figure class="masonry-item" role="listitem">
+          <img
+            src="https://picsum.photos/seed/holz1/800/500"
+            alt="Küchenmontage von Federbusch Tischlermeister in Lienz, Osttirol – maßgefertigte Einbauküche"
+            loading="lazy">
+          <figcaption class="masonry-caption">Küchenmontage · Lienz, Osttirol</figcaption>
+        </figure>
+
+        <figure class="masonry-item" role="listitem">
+          <img
+            src="https://picsum.photos/seed/holz2/600/800"
+            alt="Einbauschrankmontage durch Tischlermeister Federbusch in Tirol – präzise Ausführung"
+            loading="lazy">
+          <figcaption class="masonry-caption">Einbauschrank · Kitzbühel, Tirol</figcaption>
+        </figure>
+
+        <figure class="masonry-item" role="listitem">
+          <img
+            src="https://picsum.photos/seed/holz3/800/550"
+            alt="Parkettbodenverlegung im Wohnbereich – professionelle Bodenverlegung Osttirol"
+            loading="lazy">
+          <figcaption class="masonry-caption">Parkett Verlegung · Matrei in Osttirol</figcaption>
+        </figure>
+
+        <figure class="masonry-item" role="listitem">
+          <img
+            src="https://picsum.photos/seed/holz4/600/750"
+            alt="Türmontage – hochwertige Innentüren montiert von Lukas Federbusch, Lienz"
+            loading="lazy">
+          <figcaption class="masonry-caption">Innentüren · Spittal an der Drau, Kärnten</figcaption>
+        </figure>
+
+        <figure class="masonry-item" role="listitem">
+          <img
+            src="https://picsum.photos/seed/holz5/800/480"
+            alt="Wohnwandmontage – hochwertige Wohnzimmermöbel von Federbusch Tischlermeister Osttirol"
+            loading="lazy">
+          <figcaption class="masonry-caption">Wohnwand · Bruneck, Südtirol</figcaption>
+        </figure>
+
+        <figure class="masonry-item" role="listitem">
+          <img
+            src="https://picsum.photos/seed/holz6/600/820"
+            alt="Fenstermontage durch Tischlermeister in Osttirol – präzise und wärmegedämmt"
+            loading="lazy">
+          <figcaption class="masonry-caption">Fenstermontage · Saalfelden, Pinzgau</figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ TESTIMONIALS ══ -->
+  <section class="testimonials-section" id="stimmen" aria-labelledby="testimonials-h2">
+    <div class="container">
+      <span class="section-label">Kundenstimmen</span>
+      <h2 id="testimonials-h2">Was Auftraggeber <span class="text-accent">sagen</span></h2>
+      <p class="section-intro">Direkte Stimmen aus Osttirol und den Nachbarregionen – von Privatpersonen und Tischlereien, die mit Lukas gearbeitet haben.</p>
+
+      <div class="testimonials-grid">
+
+        <article class="testimonial-card">
+          <div class="testimonial-quote" aria-hidden="true">"</div>
+          <div class="testimonial-stars" aria-label="5 von 5 Sternen">★★★★★</div>
+          <p class="testimonial-text">Super Betreuung von Anfang bis Ende – alles perfekt gepasst, wie abgesprochen. Freuen uns schon auf die nächsten gemeinsamen Projekte.</p>
+          <div class="testimonial-author">Tischlerei aus Osttirol</div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-quote" aria-hidden="true">"</div>
+          <div class="testimonial-stars" aria-label="5 von 5 Sternen">★★★★★</div>
+          <p class="testimonial-text">Bis ins kleinste Detail perfekt geplant und umgesetzt. Wahren Küchentraum entworfen und montiert – rundum zufrieden. Kann ich auf jeden Fall weiterempfehlen.</p>
+          <div class="testimonial-author">Privatkundin aus Lienz, Osttirol</div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-quote" aria-hidden="true">"</div>
+          <div class="testimonial-stars" aria-label="5 von 5 Sternen">★★★★★</div>
+          <p class="testimonial-text">Problemlos, zuverlässig und pünktlich – besser geht es nicht. Planung und Ausführung verliefen einwandfrei. Danke an das super Team!</p>
+          <div class="testimonial-author">Gewerbekunde aus dem Pinzgau</div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ FAQ ══ -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-h2">
+    <div class="container">
+      <div style="text-align: center; max-width: 580px; margin: 0 auto;">
+        <span class="section-label">Häufige Fragen</span>
+        <h2 id="faq-h2">Antworten, die <span class="text-accent">zählen</span></h2>
+        <p class="section-intro" style="margin: 14px auto 0;">Keine Phrasen, keine Floskeln – konkrete Antworten für alle, die einen Montageauftrag in Tirol planen.</p>
+      </div>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+            <h3>Wie lange dauert eine typische Möbelmontage in Osttirol?</h3>
+            <div class="faq-chevron" aria-hidden="true">▾</div>
+          </div>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">
+              Das hängt vom Umfang ab. Eine Küchenmontage dauert typischerweise ein bis zwei Tage, einfachere Möbelstücke wie Schränke oder Regale sind oft in wenigen Stunden erledigt. Für Bautischlerarbeiten wie Fenster- oder Türmontagen kalkuliere ich vorab genau – damit Sie wissen, was Sie erwartet. Auf Wunsch gibt es einen verbindlichen Zeitplan vorab.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+            <h3>Welche Materialien und Werkzeuge werden eingesetzt?</h3>
+            <div class="faq-chevron" aria-hidden="true">▾</div>
+          </div>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">
+              Ich arbeite ausschließlich mit hochwertigem Profi-Werkzeug und Maschinen – und das ist keine Selbstverständlichkeit. Viele Montagen scheitern an ungeeignetem Werkzeug. Mein Anspruch: Das Möbel soll nach der Montage so gut sitzen, als wäre es genau für diesen Platz gemacht worden. Hochwertige Ausstattung ist dafür keine Option, sondern Grundvoraussetzung.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+            <h3>Führen Sie Montagen auch für andere Tischlereien durch?</h3>
+            <div class="faq-chevron" aria-hidden="true">▾</div>
+          </div>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">
+              Ja – ein Großteil meiner Aufträge kommt von Tischlereien in Osttirol und den angrenzenden Regionen. Viele Betriebe beauftragen mich mit der Montage ihrer Projekte direkt beim Endkunden. Wenn eine Tischlerei mir den direkten Kundenkontakt anvertraut, hat das Gewicht – und darauf bin ich stolz. Tischlereien mit regelmäßigem Montagebedarf können mich gerne auf eine Zusammenarbeit ansprechen.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+            <h3>Wie läuft ein Auftrag bei Federbusch Tischlermeister ab?</h3>
+            <div class="faq-chevron" aria-hidden="true">▾</div>
+          </div>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">
+              Zuerst ein kurzes Gespräch – telefonisch oder vor Ort in Lienz. Ich schaue mir die Situation an, bespreche den Ablauf und nenne einen fairen, transparenten Preis. Dann vereinbaren wir einen Termin. Am Montagetag bringe ich alles mit, was gebraucht wird – und ich verlasse die Baustelle erst, wenn alles sitzt und Sie zufrieden sind.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+            <h3>In welchen Regionen in Tirol und Österreich sind Sie tätig?</h3>
+            <div class="faq-chevron" aria-hidden="true">▾</div>
+          </div>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">
+              Mein Heimatgebiet ist Osttirol – von Lienz bis in die Seitentäler des Bezirks. Darüber hinaus nehme ich regelmäßig Aufträge in Kitzbühel und Kufstein, im Pinzgau, in Kärnten sowie in Südtirol an. Bei größeren Projekten bin ich auch weiter weg tätig – sprechen Sie mich einfach an. Die Qualität der Arbeit bleibt dieselbe, egal wo in Tirol oder der Nachbarregion.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+            <h3>Gibt es Garantie auf die Montagearbeiten?</h3>
+            <div class="faq-chevron" aria-hidden="true">▾</div>
+          </div>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">
+              Ja. Auf alle meine Montagearbeiten gewähre ich Garantie. Wenn nach der Montage etwas nicht passt oder nachgebessert werden muss, komme ich zurück – ohne wenn und aber. Das ist für mich selbstverständlich, im Tischlergewerbe in Tirol leider keine Selbstverständlichkeit. Transparenz und Verlässlichkeit sind keine Slogans – sie sind die Grundlage jedes Auftrags.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ KONTAKT ══ -->
+  <section class="contact-section" id="kontakt" aria-labelledby="contact-h2">
+    <div class="container">
+      <span class="section-label">Kontakt</span>
+      <h2 id="contact-h2">Ein Gespräch kostet <span class="text-accent">nichts</span></h2>
+      <p class="section-intro" style="margin-bottom: 56px;">Rufen Sie an oder schreiben Sie – Lukas antwortet persönlich. Kein Callcenter. In Lienz, Osttirol und überall in Tirol.</p>
+
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <h3>Direkt zu Lukas</h3>
+
+          <div class="contact-detail">
+            <div class="contact-icon" aria-hidden="true"><i data-lucide="phone"></i></div>
+            <div class="contact-text">
+              <strong>Telefon</strong>
+              <a href="tel:+436644107272">+43 664 410 7272</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-icon" aria-hidden="true"><i data-lucide="mail"></i></div>
+            <div class="contact-text">
+              <strong>E-Mail</strong>
+              <a href="mailto:lukas.federbusch@gmail.com">lukas.federbusch@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-icon" aria-hidden="true"><i data-lucide="map-pin"></i></div>
+            <div class="contact-text">
+              <strong>Standort</strong>
+              <span style="font-size: 15px; color: var(--text);">Lienz, Osttirol (9900)<br>
+              Tätig in Tirol · Kärnten · Pinzgau · Südtirol</span>
+            </div>
+          </div>
+
+          <div class="contact-hint">
+            <p><strong>Tischlereien & Gewerbebetriebe:</strong><br>
+            Für regelmäßige Montageaufträge sprechen wir gerne eine Zusammenarbeit ab. Lukas ist verlässlicher Montage-Partner für mehrere Betriebe in Osttirol und Tirol.</p>
+          </div>
+        </div>
+
+        <div>
+          <form class="contact-form" id="contactForm" novalidate>
+            <input type="text"  name="name"    placeholder="Ihr Name *"                              required aria-label="Ihr Name">
+            <input type="email" name="email"   placeholder="Ihre E-Mail *"                           required aria-label="Ihre E-Mail-Adresse">
+            <input type="tel"   name="phone"   placeholder="Telefonnummer (optional)"                        aria-label="Ihre Telefonnummer">
+            <textarea           name="message" placeholder="Beschreiben Sie kurz Ihr Projekt – was soll montiert werden, wo, und wann? *" required aria-label="Ihre Nachricht"></textarea>
+            <button type="submit" class="btn btn-primary">Anfrage absenden →</button>
+          </form>
+          <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
+            <strong>✓ Danke für Ihre Anfrage!</strong>
+            <p>Lukas meldet sich persönlich bei Ihnen – in der Regel noch am selben Werktag.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer" aria-labelledby="footer-heading">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div>
+          <div class="footer-logo">
+            <svg width="24" height="30" viewBox="0 0 28 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M14 2C14 2 4 9 4 20C4 25.5 8.5 30 14 30C19.5 30 24 25.5 24 20C24 9 14 2 14 2Z" stroke="#C4873B" stroke-width="1.5" fill="none"/>
+              <line x1="14" y1="30" x2="14" y2="35" stroke="#C4873B" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M7 16C9.5 15 11.5 14 14 16C16.5 18 19 17 21 16" stroke="#C4873B" stroke-width="1" stroke-linecap="round" fill="none"/>
+            </svg>
+            <span><span class="logo-light">Federbusch</span> <span class="logo-bold">Tischlermeister</span></span>
+          </div>
+          <p class="footer-desc">Lukas Federbusch – Tischlermeister und Montagespezialist aus Lienz, Osttirol. Professionelle Möbel- und Bautischlermontagen für Privatpersonen und Tischlereien in Tirol, Kärnten und Südtirol. Gegründet 2022 mit dem Anspruch: Qualität durch Handwerk.</p>
+        </div>
+
+        <div>
+          <h4>Leistungen</h4>
+          <ul class="footer-links">
+            <li><a href="#leistungen">Küchenmontage</a></li>
+            <li><a href="#leistungen">Möbelmontage</a></li>
+            <li><a href="#leistungen">Türen & Fenster</a></li>
+            <li><a href="#leistungen">Bodenverlegung</a></li>
+            <li><a href="#b2b">B2B Montageservice</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Kontakt</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+436644107272">+43 664 410 7272</a></li>
+            <li><a href="mailto:lukas.federbusch@gmail.com">lukas.federbusch@gmail.com</a></li>
+            <li>Hochschoberstraße 16/12</li>
+            <li>9900 Lienz, Osttirol</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2024–2026 Lukas Federbusch Tischlermeister · Lienz, Osttirol</span>
+        <span>
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+
+  <script defer>
+    // ── Lucide Icons ──
+    document.addEventListener('DOMContentLoaded', () => lucide.createIcons());
+
+    // ── Mobile Menu ──
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('open');
+      document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+    }
+    function closeMobileMenu() {
+      document.getElementById('mobileMenu').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    // ── FAQ Accordion ──
+    function toggleFaq(btn) {
+      const item   = btn.parentElement;
+      const answer = item.querySelector('.faq-answer');
+      const isOpen = item.classList.contains('open');
+
+      document.querySelectorAll('.faq-item.open').forEach(el => {
+        el.classList.remove('open');
+        el.querySelector('.faq-answer').style.maxHeight = '0';
+        el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+
+      if (!isOpen) {
+        item.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    }
+
+    // Keyboard support for FAQ
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggleFaq(btn);
+        }
+      });
+    });
+
+    // ── Transformation Slider ──
+    (function () {
+      const container = document.getElementById('sliderContainer');
+      const before    = document.getElementById('sliderBefore');
+      const handle    = document.getElementById('sliderHandle');
+      if (!container || !before || !handle) return;
+
+      let isDragging   = false;
+      let currentPct   = 50;
+
+      function clamp(v, lo, hi) { return Math.min(hi, Math.max(lo, v)); }
+
+      function update(pct) {
+        pct = clamp(pct, 4, 96);
+        currentPct = pct;
+        before.style.clipPath  = `inset(0 ${100 - pct}% 0 0)`;
+        handle.style.left      = pct + '%';
+      }
+
+      function pctFrom(clientX) {
+        const r = container.getBoundingClientRect();
+        return ((clientX - r.left) / r.width) * 100;
+      }
+
+      container.addEventListener('mousedown',  e => { isDragging = true; e.preventDefault(); });
+      document.addEventListener('mousemove',   e => { if (isDragging) update(pctFrom(e.clientX)); });
+      document.addEventListener('mouseup',     ()  => { isDragging = false; });
+
+      container.addEventListener('touchstart', e => { isDragging = true; }, { passive: true });
+      document.addEventListener('touchmove',   e => {
+        if (isDragging) update(pctFrom(e.touches[0].clientX));
+      }, { passive: true });
+      document.addEventListener('touchend',   ()  => { isDragging = false; });
+
+      update(50);
+    })();
+
+    // ── Contact Form ──
+    document.getElementById('contactForm')?.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name    = this.querySelector('[name="name"]').value.trim();
+      const email   = this.querySelector('[name="email"]').value.trim();
+      const message = this.querySelector('[name="message"]').value.trim();
+      if (!name || !email || !message) { alert('Bitte füllen Sie alle Pflichtfelder aus.'); return; }
+      this.style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    });
+
+    // ── Smooth scroll ──
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      });
+    });
+  </script>
+
+</body>
+</html>
