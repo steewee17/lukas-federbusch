@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Federbusch Tischlermeister – Professionelle Möbelmontage in Osttirol & Tirol</title>
-  <meta name="description" content="Lukas Federbusch – Tischlermeister aus Lienz, Osttirol. Spezialist für Möbelmontagen, Küchenmontagen, Türen, Fenster und Böden. Vertrauenspartner von Tischlereien in Tirol, Kärnten und Südtirol seit 2022.">
+  <title>Federbusch Tischlermeister – Planung, Produktion & Montage in Osttirol</title>
+  <meta name="description" content="Lukas Federbusch – Tischlermeister aus Lienz, Osttirol. Planung, Produktion und Montage von Möbeln, Küchen, Türen, Fenstern und Böden. Für Privatpersonen und Tischlereien in Tirol, Kärnten und Südtirol.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://federbusch-tischlermeister.at">
   <meta property="og:title" content="Federbusch Tischlermeister – Möbelmontage Osttirol">
@@ -12,11 +12,11 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_AT">
   <link rel="alternate" href="/llms.txt" title="AI Context">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪵</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 160'><path d='M50 8 C50 8 18 32 18 72 C18 97 32 115 50 115 C68 115 82 97 82 72 C82 32 50 8 50 8Z' stroke='%231E3A2F' stroke-width='4' fill='none'/><line x1='50' y1='115' x2='50' y2='152' stroke='%231E3A2F' stroke-width='3' stroke-linecap='round'/><path d='M26 60 C34 57 42 54 50 60 C58 66 66 63 74 60' stroke='%231E3A2F' stroke-width='2' stroke-linecap='round' fill='none'/><path d='M22 78 C31 75 40 72 50 78 C60 84 69 81 78 78' stroke='%231E3A2F' stroke-width='2' stroke-linecap='round' fill='none'/><path d='M26 94 C34 91 42 88 50 94 C58 100 66 97 74 94' stroke='%231E3A2F' stroke-width='1.5' stroke-linecap='round' fill='none'/></svg>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -49,10 +49,10 @@
     }
 
     h1, h2, h3, h4 {
-      font-family: 'Fraunces', serif;
+      font-family: 'Cormorant Garant', serif;
       font-weight: 700;
-      letter-spacing: -0.02em;
-      line-height: 1.15;
+      letter-spacing: 0.01em;
+      line-height: 1.12;
     }
 
     h1 { font-size: clamp(56px, 5.5vw, 68px); } /* min 56px desktop per STYLES.md */
@@ -141,7 +141,7 @@
       align-items: center;
       gap: 12px;
       color: var(--white);
-      font-family: 'Fraunces', serif;
+      font-family: 'Cormorant Garant', serif;
       font-size: 19px;
     }
 
@@ -218,7 +218,7 @@
     .mobile-menu.open { transform: translateX(0); }
     .mobile-menu a {
       color: var(--white);
-      font-family: 'Fraunces', serif;
+      font-family: 'Cormorant Garant', serif;
       font-size: 26px;
       font-weight: 700;
       transition: color 0.2s;
@@ -350,7 +350,7 @@
     }
 
     .hero-stat-num {
-      font-family: 'Fraunces', serif;
+      font-family: 'Cormorant Garant', serif;
       font-size: 36px;
       font-weight: 700;
       color: var(--accent);
@@ -441,6 +441,97 @@
       letter-spacing: -2px;
     }
 
+
+    /* ── PROZESS ── */
+    .prozess-section { background: var(--bg-warm); }
+
+    .prozess-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      margin-top: 56px;
+      position: relative;
+    }
+
+    /* Connecting line between steps */
+    .prozess-grid::before {
+      content: '';
+      position: absolute;
+      top: 36px;
+      left: calc(16.666% + 24px);
+      right: calc(16.666% + 24px);
+      height: 1px;
+      background: linear-gradient(90deg, var(--accent), rgba(196,135,59,0.3), var(--accent));
+    }
+
+    .prozess-step {
+      padding: 0 40px;
+      text-align: center;
+      position: relative;
+    }
+
+    .prozess-step:first-child { padding-left: 0; }
+    .prozess-step:last-child  { padding-right: 0; }
+
+    .prozess-num {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: var(--bg-main);
+      border: 1.5px solid var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 28px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .prozess-num svg {
+      width: 28px;
+      height: 28px;
+      color: var(--accent);
+      stroke-width: 1.5;
+    }
+
+    .prozess-step h3 {
+      font-family: 'Cormorant Garant', serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 14px;
+      letter-spacing: 0.01em;
+    }
+
+    .prozess-step p {
+      font-size: 15px;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    .prozess-img {
+      margin-top: 52px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      aspect-ratio: 16/6;
+    }
+
+    .prozess-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      .prozess-grid { grid-template-columns: 1fr; gap: 40px; }
+      .prozess-grid::before { display: none; }
+      .prozess-step { padding: 0; text-align: left; display: flex; gap: 20px; align-items: flex-start; }
+      .prozess-num { flex-shrink: 0; width: 52px; height: 52px; margin: 0; }
+      .prozess-num svg { width: 22px; height: 22px; }
+      .prozess-img { aspect-ratio: 16/9; }
+    }
+
     /* ── ABOUT / PHILOSOPHIE ── */
     .about-section { background: var(--bg-warm); }
 
@@ -472,7 +563,7 @@
       text-align: center;
     }
     .about-badge-year {
-      font-family: 'Fraunces', serif;
+      font-family: 'Cormorant Garant', serif;
       font-size: 38px;
       font-weight: 700;
       color: var(--accent);
@@ -492,7 +583,7 @@
       margin: 28px 0;
       background: rgba(196,135,59,0.06);
       border-radius: 0 var(--radius) var(--radius) 0;
-      font-family: 'Fraunces', serif;
+      font-family: 'Cormorant Garant', serif;
       font-style: italic;
       font-size: 20px;
       line-height: 1.5;
@@ -515,7 +606,7 @@
       flex-wrap: wrap;
     }
     .about-fact-num {
-      font-family: 'Fraunces', serif;
+      font-family: 'Cormorant Garant', serif;
       font-size: 30px;
       font-weight: 700;
       color: var(--accent);
@@ -649,7 +740,7 @@
     }
 
     .testimonial-quote {
-      font-family: 'Fraunces', serif;
+      font-family: 'Cormorant Garant', serif;
       font-size: 72px;
       color: var(--accent);
       opacity: 0.22;
@@ -665,7 +756,7 @@
     }
 
     .testimonial-text {
-      font-family: 'Fraunces', serif;
+      font-family: 'Cormorant Garant', serif;
       font-style: italic;
       font-size: 17px;
       line-height: 1.6;
@@ -851,7 +942,7 @@
       display: flex;
       align-items: center;
       gap: 12px;
-      font-family: 'Fraunces', serif;
+      font-family: 'Cormorant Garant', serif;
       font-size: 18px;
       color: var(--white);
       margin-bottom: 18px;
@@ -864,7 +955,7 @@
     }
 
     .footer h4 {
-      font-family: 'Fraunces', serif;
+      font-family: 'Cormorant Garant', serif;
       font-size: 16px;
       color: var(--white);
       margin-bottom: 18px;
@@ -1046,6 +1137,7 @@
 
       <ul class="nav-links">
         <li><a href="#leistungen">Leistungen</a></li>
+        <li><a href="#prozess">Ablauf</a></li>
         <li><a href="#philosophie">Über Lukas</a></li>
         <li><a href="#projekte">Projekte</a></li>
         <li><a href="#faq">FAQ</a></li>
@@ -1080,9 +1172,9 @@
           </div>
 
           <h1 id="hero-h1">
-            Erst durch die Montage<br>
-            <em class="hero-em">entfalten Möbel</em><br>
-            <span class="text-accent">ihren wahren Wert.</span>
+            Von der Idee<br>
+            <em class="hero-em">zum fertigen Raum –</em><br>
+            <span class="text-accent">alles aus einer Hand.</span>
           </h1>
 
           <p class="hero-subline">
@@ -1190,6 +1282,52 @@
   </section>
 
 
+
+  <!-- ══ PROZESS ══ -->
+  <section class="prozess-section" id="prozess" aria-labelledby="prozess-h2">
+    <div class="container">
+      <span class="section-label">Vom Konzept zur Vollendung</span>
+      <h2 id="prozess-h2">Drei Phasen.<br><span class="text-accent">Ein Ansprechpartner.</span></h2>
+      <p class="section-intro">Ich begleite dein Projekt von der ersten Idee bis zum fertigen Raum – als Planer, Produzent und Monteur in einer Person.</p>
+
+      <div class="prozess-grid">
+
+        <div class="prozess-step">
+          <div class="prozess-num" aria-hidden="true">
+            <i data-lucide="pencil-ruler"></i>
+          </div>
+          <h3>Planung &amp;<br>Raumgestaltung</h3>
+          <p>Gemeinsam entwickeln wir deine Idee. Ich denke Räume vom Menschen her – was brauchst du wirklich, wie wird der Raum genutzt, was soll er ausstrahlen? Aus diesen Fragen entsteht ein konkreter Plan.</p>
+        </div>
+
+        <div class="prozess-step">
+          <div class="prozess-num" aria-hidden="true">
+            <i data-lucide="package"></i>
+          </div>
+          <h3>Produktion &amp;<br>Beschaffung</h3>
+          <p>Ich produziere Möbel und Bautischlerkomponenten selbst oder beschaffe sie bei verlässlichen Partnern. Dabei kenne ich die Qualitätsunterschiede – und wähle nur, wofür ich selbst einstehen kann.</p>
+        </div>
+
+        <div class="prozess-step">
+          <div class="prozess-num" aria-hidden="true">
+            <i data-lucide="check-circle"></i>
+          </div>
+          <h3>Montage &amp;<br>Fertigstellung</h3>
+          <p>Die Montage ist der Moment, in dem alles zusammenkommt. Ich montiere mit dem Anspruch, der dem Möbel gerecht wird – präzise, sorgfältig, mit Profi-Werkzeug und dem Blick fürs Detail.</p>
+        </div>
+
+      </div>
+
+      <div class="prozess-img">
+        <img src="./federbusch-planung.jpg"
+             alt="Lukas Federbusch bei der Planung eines Inneneinrichtungsprojekts – Tischlermeister in Lienz, Osttirol"
+             loading="lazy"
+             onerror="this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400&h=525&fit=crop&q=80'; this.onerror=null;">
+      </div>
+    </div>
+  </section>
+
+
   <!-- ══ ABOUT / PHILOSOPHIE ══ -->
   <section class="about-section" id="philosophie" aria-labelledby="about-h2">
     <div class="container">
@@ -1254,10 +1392,24 @@
   <section class="services-section" id="leistungen" aria-labelledby="services-h2">
     <div class="container">
       <span class="section-label">Leistungen</span>
-      <h2 id="services-h2">Präzision in<br>jedem <span class="text-accent">Bereich</span></h2>
-      <p class="section-intro">Von der Traumküche bis zur Eingangstür – ich montiere alles, was das Tischlerhandwerk hergibt. In Osttirol und weit darüber hinaus.</p>
+      <h2 id="services-h2">Alles aus<br><span class="text-accent">einer Hand</span></h2>
+      <p class="section-intro">Planung, Produktion, Montage – ich biete alle drei Phasen aus einer Hand. Vom ersten Gespräch bis zum fertig eingerichteten Raum, in Osttirol und den angrenzenden Regionen.</p>
 
       <div class="services-grid">
+
+        <article class="service-card" aria-labelledby="s0a-h">
+          <div class="service-icon" aria-hidden="true"><i data-lucide="pencil-ruler"></i></div>
+          <h3 id="s0a-h">Planung & Raumgestaltung</h3>
+          <p>Bevor ein Möbel entsteht, entsteht ein Plan. Ich entwickle mit dir Konzepte für Inneneinrichtung und Raumgestaltung – funktional, ästhetisch und auf deine Lebensweise abgestimmt. Vom ersten Gespräch bis zur fertigen Skizze.</p>
+          <span class="service-tag">Neu im Angebot</span>
+        </article>
+
+        <article class="service-card" aria-labelledby="s0b-h">
+          <div class="service-icon" aria-hidden="true"><i data-lucide="package"></i></div>
+          <h3 id="s0b-h">Produktion & Beschaffung</h3>
+          <p>Maßgefertigte Möbel, Küchen und Bautischlerkomponenten – ich produziere selbst oder beschaffe bei geprüften Partnern. Immer mit dem Anspruch: Was meinen Namen trägt, muss halten was es verspricht.</p>
+          <span class="service-tag">Neu im Angebot</span>
+        </article>
 
         <article class="service-card" aria-labelledby="s1-h">
           <div class="service-icon" aria-hidden="true"><i data-lucide="utensils"></i></div>
@@ -1302,7 +1454,7 @@
             <span class="service-tag">Gewerbekunden</span>
           </div>
           <div>
-            <p>Regional ansässige Tischlereien beauftragen Lukas mit der Montage ihrer Projekte direkt beim Endkunden. Dieses Vertrauen von Handwerker zu Handwerker ist das ehrlichste Qualitätsmerkmal: Wer selbst Tischler ist, weiß, wem er seine Kunden anvertraut.</p>
+            <p>Regional ansässige Tischlereien beauftragen mich mit der Montage ihrer Projekte direkt beim Endkunden. Dieses Vertrauen von Handwerker zu Handwerker ist das ehrlichste Qualitätsmerkmal: Wer selbst Tischler ist, weiß, wem er seine Kunden anvertraut.</p>
             <p style="margin-top: 12px;">Verlässliche Terminplanung, professioneller Kundenkontakt und saubere Ausführung – damit dein Projekt auch in der letzten Phase glänzt.</p>
             <a href="#kontakt" class="btn btn-primary" style="margin-top: 20px; width: fit-content;">Montageauftrag anfragen</a>
           </div>
