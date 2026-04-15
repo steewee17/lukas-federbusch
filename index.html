@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_AT">
   <link rel="alternate" href="/llms.txt" title="AI Context">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 160'><path d='M50 8 C50 8 18 32 18 72 C18 97 32 115 50 115 C68 115 82 97 82 72 C82 32 50 8 50 8Z' stroke='%231E3A2F' stroke-width='4' fill='none'/><line x1='50' y1='115' x2='50' y2='152' stroke='%231E3A2F' stroke-width='3' stroke-linecap='round'/><path d='M26 60 C34 57 42 54 50 60 C58 66 66 63 74 60' stroke='%231E3A2F' stroke-width='2' stroke-linecap='round' fill='none'/><path d='M22 78 C31 75 40 72 50 78 C60 84 69 81 78 78' stroke='%231E3A2F' stroke-width='2' stroke-linecap='round' fill='none'/><path d='M26 94 C34 91 42 88 50 94 C58 100 66 97 74 94' stroke='%231E3A2F' stroke-width='1.5' stroke-linecap='round' fill='none'/></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50 4 C50 4 12 28 12 58 C12 78 29 96 50 96 C71 96 88 78 88 58 C88 28 50 4 50 4Z' stroke='%231E3A2F' stroke-width='4.5' fill='none'/><path d='M22 50 C31 46 40 43 50 50 C60 57 69 54 78 50' stroke='%231E3A2F' stroke-width='2.5' stroke-linecap='round' fill='none'/><path d='M18 66 C28 62 38 59 50 66 C62 73 72 70 82 66' stroke='%231E3A2F' stroke-width='2' stroke-linecap='round' fill='none'/><path d='M24 82 C33 78 41 76 50 82 C59 88 67 86 76 82' stroke='%231E3A2F' stroke-width='1.5' stroke-linecap='round' fill='none'/></svg>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -509,18 +509,24 @@
       line-height: 1.7;
     }
 
-    .prozess-img {
-      margin-top: 52px;
+    .prozess-step-img {
+      margin-top: 24px;
       border-radius: var(--radius);
       overflow: hidden;
-      box-shadow: var(--shadow-lg);
-      aspect-ratio: 16/6;
+      box-shadow: var(--shadow-md);
+      aspect-ratio: 1/1;
+      width: 100%;
     }
 
-    .prozess-img img {
+    .prozess-step-img img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .prozess-step:hover .prozess-step-img img {
+      transform: scale(1.03);
     }
 
     @media (max-width: 768px) {
@@ -529,7 +535,7 @@
       .prozess-step { padding: 0; text-align: left; display: flex; gap: 20px; align-items: flex-start; }
       .prozess-num { flex-shrink: 0; width: 52px; height: 52px; margin: 0; }
       .prozess-num svg { width: 22px; height: 22px; }
-      .prozess-img { aspect-ratio: 16/9; }
+      .prozess-step-img { aspect-ratio: 1/1; }
     }
 
     /* ── ABOUT / PHILOSOPHIE ── */
@@ -1178,7 +1184,7 @@
           </h1>
 
           <p class="hero-subline">
-            Ich bin dein Spezialist für hochqualitative Möbel- und Bautischlermontagen in Osttirol. Präzise. Verlässlich. Mit Liebe zum Handwerk.
+            Vom ersten Entwurf bis zur fertigen Küche – ich plane, produziere und montiere als Tischlermeister aus Lienz. Für Privatpersonen und Tischlereien in Osttirol, Tirol, Kärnten und Südtirol.
           </p>
 
           <div class="hero-actions">
@@ -1298,6 +1304,12 @@
           </div>
           <h3>Planung &amp;<br>Raumgestaltung</h3>
           <p>Gemeinsam entwickeln wir deine Idee. Ich denke Räume vom Menschen her – was brauchst du wirklich, wie wird der Raum genutzt, was soll er ausstrahlen? Aus diesen Fragen entsteht ein konkreter Plan.</p>
+          <div class="prozess-step-img">
+            <img src="./federbusch-planung.png"
+                 alt="Lukas Federbusch bei der Planung – Tischlermeister Lienz, Osttirol"
+                 loading="lazy"
+                 onerror="this.src='https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=600&h=600&fit=crop&q=80'; this.onerror=null;">
+          </div>
         </div>
 
         <div class="prozess-step">
@@ -1306,6 +1318,12 @@
           </div>
           <h3>Produktion &amp;<br>Beschaffung</h3>
           <p>Ich produziere Möbel und Bautischlerkomponenten selbst oder beschaffe sie bei verlässlichen Partnern. Dabei kenne ich die Qualitätsunterschiede – und wähle nur, wofür ich selbst einstehen kann.</p>
+          <div class="prozess-step-img">
+            <img src="./federbusch-produktion.png"
+                 alt="Produktion und Beschaffung hochwertiger Möbel – Federbusch Tischlermeister"
+                 loading="lazy"
+                 onerror="this.src='https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&h=600&fit=crop&q=80'; this.onerror=null;">
+          </div>
         </div>
 
         <div class="prozess-step">
@@ -1314,16 +1332,16 @@
           </div>
           <h3>Montage &amp;<br>Fertigstellung</h3>
           <p>Die Montage ist der Moment, in dem alles zusammenkommt. Ich montiere mit dem Anspruch, der dem Möbel gerecht wird – präzise, sorgfältig, mit Profi-Werkzeug und dem Blick fürs Detail.</p>
+          <div class="prozess-step-img">
+            <img src="./federbusch-montage.png"
+                 alt="Professionelle Möbelmontage durch Lukas Federbusch, Tischlermeister Osttirol"
+                 loading="lazy"
+                 onerror="this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=600&fit=crop&q=80'; this.onerror=null;">
+          </div>
         </div>
 
       </div>
 
-      <div class="prozess-img">
-        <img src="./federbusch-planung.jpg"
-             alt="Lukas Federbusch bei der Planung eines Inneneinrichtungsprojekts – Tischlermeister in Lienz, Osttirol"
-             loading="lazy"
-             onerror="this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400&h=525&fit=crop&q=80'; this.onerror=null;">
-      </div>
     </div>
   </section>
 
