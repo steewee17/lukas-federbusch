@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_AT">
   <link rel="alternate" href="/llms.txt" title="AI Context">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50 4 C50 4 12 28 12 58 C12 78 29 96 50 96 C71 96 88 78 88 58 C88 28 50 4 50 4Z' stroke='%231E3A2F' stroke-width='4.5' fill='none'/><path d='M22 50 C31 46 40 43 50 50 C60 57 69 54 78 50' stroke='%231E3A2F' stroke-width='2.5' stroke-linecap='round' fill='none'/><path d='M18 66 C28 62 38 59 50 66 C62 73 72 70 82 66' stroke='%231E3A2F' stroke-width='2' stroke-linecap='round' fill='none'/><path d='M24 82 C33 78 41 76 50 82 C59 88 67 86 76 82' stroke='%231E3A2F' stroke-width='1.5' stroke-linecap='round' fill='none'/></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50 3 C50 3 16 25 16 58 C16 78 31 97 50 97 C69 97 84 78 84 58 C84 25 50 3 50 3Z' stroke='%231E3A2F' stroke-width='2.5' fill='none'/><path d='M24 52 C33 48 41 45 50 52 C59 59 67 56 76 52' stroke='%231E3A2F' stroke-width='1.8' stroke-linecap='round' fill='none'/><path d='M20 67 C30 63 39 60 50 67 C61 74 70 71 80 67' stroke='%231E3A2F' stroke-width='1.5' stroke-linecap='round' fill='none'/><path d='M26 81 C34 78 42 76 50 81 C58 86 66 84 74 81' stroke='%231E3A2F' stroke-width='1.2' stroke-linecap='round' fill='none'/></svg>"><path d='M50 4 C50 4 12 28 12 58 C12 78 29 96 50 96 C71 96 88 78 88 58 C88 28 50 4 50 4Z' stroke='%231E3A2F' stroke-width='4.5' fill='none'/><path d='M22 50 C31 46 40 43 50 50 C60 57 69 54 78 50' stroke='%231E3A2F' stroke-width='2.5' stroke-linecap='round' fill='none'/><path d='M18 66 C28 62 38 59 50 66 C62 73 72 70 82 66' stroke='%231E3A2F' stroke-width='2' stroke-linecap='round' fill='none'/><path d='M24 82 C33 78 41 76 50 82 C59 88 67 86 76 82' stroke='%231E3A2F' stroke-width='1.5' stroke-linecap='round' fill='none'/></svg>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -468,6 +468,8 @@
       padding: 0 40px;
       text-align: center;
       position: relative;
+      display: flex;
+      flex-direction: column;
     }
 
     .prozess-step:first-child { padding-left: 0; }
@@ -510,7 +512,8 @@
     }
 
     .prozess-step-img {
-      margin-top: 24px;
+      margin-top: auto;
+      padding-top: 24px;
       border-radius: var(--radius);
       overflow: hidden;
       box-shadow: var(--shadow-md);
@@ -1114,7 +1117,7 @@
         "name": "In welchen Regionen ist Lukas Federbusch als Tischlermeister tätig?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Mein Heimatgebiet ist Osttirol – von Lienz bis in die Seitentäler des Bezirks. Darüber hinaus nehme ich regelmäßig Aufträge in Kitzbühel und Kufstein, im Pinzgau, in Kärnten sowie in Südtirol an. Bei größeren Projekten bin ich auch weiter weg tätig – sprechen Sie mich an."
+          "text": "Mein Heimatgebiet ist Osttirol – von Lienz bis in die Seitentäler des Bezirks. Darüber hinaus nehme ich regelmäßig Aufträge in Kärnten, Salzburg, dem Pinzgau sowie in Südtirol an. Bei größeren Projekten bin ich auch weiter weg tätig – sprechen Sie mich an."
         }
       },
       {
@@ -1184,7 +1187,7 @@
           </h1>
 
           <p class="hero-subline">
-            Vom ersten Entwurf bis zur fertigen Küche – ich plane, produziere und montiere als Tischlermeister aus Lienz. Für Privatpersonen und Tischlereien in Osttirol, Tirol, Kärnten und Südtirol.
+            Vom ersten Entwurf bis zum erfolgreichen Projektabschluss – ich plane, produziere und montiere als Tischlermeister aus Lienz. Für Privatpersonen und Tischlereien in Osttirol, Kärnten, Salzburg und Südtirol.
           </p>
 
           <div class="hero-actions">
@@ -1411,7 +1414,7 @@
     <div class="container">
       <span class="section-label">Leistungen</span>
       <h2 id="services-h2">Alles aus<br><span class="text-accent">einer Hand</span></h2>
-      <p class="section-intro">Planung, Produktion, Montage – ich biete alle drei Phasen aus einer Hand. Vom ersten Gespräch bis zum fertig eingerichteten Raum, in Osttirol und den angrenzenden Regionen.</p>
+      <p class="section-intro">Küchen, Möbel, Türen, Fenster, Böden – für jeden Bereich bringe ich Planung, Produktion und Montage aus einer Hand. Du hast einen Ansprechpartner für das gesamte Projekt.</p>
 
       <div class="services-grid">
 
@@ -1429,40 +1432,34 @@
           <span class="service-tag">Neu im Angebot</span>
         </article>
 
-        <article class="service-card" aria-labelledby="s1-h">
+        <article class="service-card" aria-labelledby="sp1-h">
           <div class="service-icon" aria-hidden="true"><i data-lucide="utensils"></i></div>
-          <h3 id="s1-h">Küchenmontage</h3>
-          <p>Küchen sind die komplexesten Möbelstücke überhaupt. Perfekt ausgerichtete Fronten, präzise Scharniere, lautlos laufende Schubladen – das ist Handwerk auf höchstem Niveau. In Lienz und Osttirol bringe ich deine Traumküche so zum Stehen, dass sie ein Leben lang funktioniert.</p>
-          <span class="service-tag">Privatpersonen & B2B</span>
+          <h3 id="sp1-h">Küchen</h3>
+          <p>Die Küche ist das Herzstück jedes Zuhauses. Ich plane, beschaffe und montiere Küchen, die zu deinem Leben passen – von der modernen Inselküche bis zur klassischen Landhausküche. Maßgenau, langlebig, in Osttirol und den angrenzenden Regionen.</p>
+          <span class="service-tag">Planung · Produktion · Montage</span>
         </article>
 
-        <article class="service-card" aria-labelledby="s2-h">
+        <article class="service-card" aria-labelledby="sp2-h">
           <div class="service-icon" aria-hidden="true"><i data-lucide="armchair"></i></div>
-          <h3 id="s2-h">Möbelmontage</h3>
-          <p>Schränke, Regale, Wohnwände, Schlafzimmer – jedes Möbelstück verdient eine Montage, die sitzt. Besonders bei hochwertigen Möbeln zahlt sich professionelle Montage in Tirol aus: Sie verlängert die Lebensdauer und hält das, was die Qualität verspricht.</p>
-          <span class="service-tag">Wohn- & Schlafbereich</span>
+          <h3 id="sp2-h">Möbel & Einbauschränke</h3>
+          <p>Wohnwände, Einbauschränke, Regale, Schlafzimmer – jedes Möbel verdient einen Platz, der sitzt. Ich entwickle Lösungen, die den Raum optimal nutzen, und stelle sicher, dass die Qualität auch in zwanzig Jahren noch hält.</p>
+          <span class="service-tag">Maßarbeit & Montage</span>
         </article>
 
-        <article class="service-card" aria-labelledby="s3-h">
+        <article class="service-card" aria-labelledby="sp3-h">
           <div class="service-icon" aria-hidden="true"><i data-lucide="door-open"></i></div>
-          <h3 id="s3-h">Türen & Fenster</h3>
-          <p>Türen und Fenster sind täglich im Einsatz – hunderte Male im Jahr. Eine schlecht montierte Tür nervt nicht nur, sie kostet Energie und Geld. Ich montiere Innen- und Außentüren sowie Fenster in Osttirol mit der Sorgfalt, die langfristige Funktion garantiert.</p>
+          <h3 id="sp3-h">Türen & Fenster</h3>
+          <p>Türen und Fenster sind täglich hunderte Male im Einsatz. Schlecht montiert kosten sie Energie, Komfort und Nerven. Ich montiere Innen- und Außentüren sowie Fenster mit der Sorgfalt, die langfristige Funktion und Dichtheit garantiert.</p>
           <span class="service-tag">Bautischlerarbeiten</span>
         </article>
 
-        <article class="service-card" aria-labelledby="s4-h">
+        <article class="service-card" aria-labelledby="sp4-h">
           <div class="service-icon" aria-hidden="true"><i data-lucide="layers-2"></i></div>
-          <h3 id="s4-h">Bodenverlegung</h3>
-          <p>Parkett, Laminat, Massivholzdielen – der Boden trägt alles. Ich verlege Holzböden in Osttirol und angrenzenden Regionen mit dem Feingefühl, das das natürliche Material verlangt: sorgfältige Akklimatisierung, saubere Fugen, dauerhafte Unterkonstruktion.</p>
+          <h3 id="sp4-h">Böden & Parkett</h3>
+          <p>Der Boden trägt alles – buchstäblich. Parkett, Massivholzdielen, Laminat: Ich verlege Holzböden mit dem Feingefühl, das natürliche Materialien verlangen. Sorgfältige Akklimatisierung, saubere Fugen, dauerhafte Unterkonstruktion.</p>
           <span class="service-tag">Holz & Parkett</span>
         </article>
 
-        <article class="service-card" aria-labelledby="s5-h">
-          <div class="service-icon" aria-hidden="true"><i data-lucide="hard-hat"></i></div>
-          <h3 id="s5-h">Bautischlerarbeiten</h3>
-          <p>Innenausbau, Verkleidungen, Einbauschränke, Dachbodenausbau – alles, was Holz und Handwerk verbindet. Als Tischlermeister übernehme ich auch komplexe Bautischlerarbeiten in Tirol, Kärnten, Pinzgau und Südtirol.</p>
-          <span class="service-tag">Innenausbau</span>
-        </article>
 
         <!-- B2B HIGHLIGHT -->
         <article class="service-card service-b2b" aria-labelledby="s6-h" id="b2b">
@@ -1494,8 +1491,8 @@
 
         <article class="trust-card" role="listitem" aria-labelledby="t1-h">
           <div class="trust-icon" aria-hidden="true"><i data-lucide="shield-check"></i></div>
-          <h3 id="t1-h">Garantie auf alle Montagearbeiten</h3>
-          <p>Ich stehe hinter jeder Montage mit meinem Namen. Wenn etwas nicht stimmt, komme ich zurück – ohne Diskussion, ohne Bürokratie. Ich liefere nur Arbeiten ab, hinter denen ich voll und ganz stehen kann.</p>
+          <h3 id="t1-h">Garantie auf alle Leistungen</h3>
+          <p>Ich stehe hinter jeder Leistung mit meinem Namen – egal ob Planung, Produktion oder Montage. Wenn etwas nicht stimmt, komme ich zurück. Ohne Diskussion, ohne Bürokratie.</p>
         </article>
 
         <article class="trust-card" role="listitem" aria-labelledby="t2-h">
@@ -1623,6 +1620,30 @@
 
         <div class="faq-item">
           <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+            <h3>Bietest du auch Planung und Raumgestaltung an?</h3>
+            <div class="faq-chevron" aria-hidden="true">▾</div>
+          </div>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">
+              Ja – Planung ist inzwischen ein vollwertiger Teil meines Angebots. Ich begleite dich vom ersten Gespräch über Ideen und Konzepte bis hin zur konkreten Planung deiner Einrichtung. Dabei denke ich immer an die Umsetzbarkeit: Was ich plane, kann ich auch produzieren und montieren. Das erspart dir Abstimmungsaufwand zwischen verschiedenen Gewerken.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+            <h3>Kannst du Möbel auch selbst produzieren?</h3>
+            <div class="faq-chevron" aria-hidden="true">▾</div>
+          </div>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">
+              Ja. Ich produziere Möbel und Bautischlerkomponenten selbst oder beschaffe sie über verlässliche Partner – je nach Projekt und Anforderung. In beiden Fällen trage ich die Verantwortung für die Qualität. Ich kenne die Unterschiede zwischen Anbietern aus eigener Erfahrung und wähle nur, wofür ich persönlich einstehen kann.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
             <h3>Wie lange dauert eine typische Möbelmontage in Osttirol?</h3>
             <div class="faq-chevron" aria-hidden="true">▾</div>
           </div>
@@ -1664,7 +1685,7 @@
           </div>
           <div class="faq-answer" role="region">
             <div class="faq-answer-inner">
-              Zuerst ein kurzes Gespräch – telefonisch oder vor Ort in Lienz. Ich schaue mir die Situation an, bespreche den Ablauf und nenne einen fairen, transparenten Preis. Dann vereinbaren wir einen Termin. Am Montagetag bringe ich alles mit, was gebraucht wird – und ich verlasse die Baustelle erst, wenn alles sitzt und du zufrieden bist.
+              Zuerst ein kurzes Gespräch – telefonisch oder vor Ort in Lienz. Wir klären, was du brauchst: geht es um reine Montage, oder soll ich auch bei Planung und Beschaffung mitwirken? Daraus entwickle ich einen konkreten Vorschlag mit transparentem Preis. Dann vereinbaren wir einen Termin – und ich verlasse die Baustelle erst, wenn alles sitzt und du zufrieden bist.
             </div>
           </div>
         </div>
@@ -1676,19 +1697,19 @@
           </div>
           <div class="faq-answer" role="region">
             <div class="faq-answer-inner">
-              Mein Heimatgebiet ist Osttirol – von Lienz bis in die Seitentäler des Bezirks. Darüber hinaus nehme ich regelmäßig Aufträge in Kitzbühel und Kufstein, im Pinzgau, in Kärnten sowie in Südtirol an. Bei größeren Projekten bin ich auch weiter weg tätig – sprich mich einfach an. Die Qualität der Arbeit bleibt dieselbe, egal wo in Tirol oder der Nachbarregion.
+              Mein Heimatgebiet ist Osttirol – von Lienz bis in die Seitentäler des Bezirks. Darüber hinaus nehme ich regelmäßig Aufträge in Kärnten, Salzburg, dem Pinzgau sowie in Südtirol an. Bei größeren Projekten bin ich auch weiter weg tätig – sprich mich einfach an. Die Qualität der Arbeit bleibt dieselbe, egal wo in Tirol oder der Nachbarregion.
             </div>
           </div>
         </div>
 
         <div class="faq-item">
           <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
-            <h3>Gibt es Garantie auf die Montagearbeiten?</h3>
+            <h3>Gibt es Garantie auf deine Arbeiten?</h3>
             <div class="faq-chevron" aria-hidden="true">▾</div>
           </div>
           <div class="faq-answer" role="region">
             <div class="faq-answer-inner">
-              Ja. Auf alle meine Montagearbeiten gewähre ich Garantie. Wenn nach der Montage etwas nicht passt oder nachgebessert werden muss, komme ich zurück – ohne wenn und aber. Das ist für mich selbstverständlich, im Tischlergewerbe in Tirol leider keine Selbstverständlichkeit. Transparenz und Verlässlichkeit sind keine Slogans – sie sind die Grundlage jedes Auftrags.
+              Ja. Auf alle meine Arbeiten – ob Planung, Produktion oder Montage – stehe ich mit meinem Namen. Wenn etwas nicht passt, komme ich zurück – ohne wenn und aber. Das gilt für die Montage genauso wie für das, was ich produziere oder beschaffe. Transparenz und Verlässlichkeit sind keine Slogans, sie sind die Grundlage jedes Auftrags.
             </div>
           </div>
         </div>
@@ -1769,7 +1790,7 @@
          <div class="footer-logo">
   <img src="./federbusch-logo-weiss.png" alt="Federbusch Tischlermeister Logo" style="height: 72px; width: auto;">
 </div>
-          <p class="footer-desc">Lukas Federbusch – Tischlermeister und Montagespezialist aus Lienz, Osttirol. Professionelle Möbel- und Bautischlermontagen für Privatpersonen und Tischlereien in Tirol, Kärnten und Südtirol. Gegründet 2022 mit dem Anspruch: Qualität durch Handwerk.</p>
+          <p class="footer-desc">Lukas Federbusch – Tischlermeister aus Lienz, Osttirol. Planung, Produktion und Montage von Möbeln, Küchen, Türen, Fenstern und Böden – für Privatpersonen und Tischlereien in Osttirol, Kärnten, Salzburg und Südtirol. Gegründet 2022.</p>
         </div>
 
         <div>
